@@ -113,11 +113,11 @@ function findBoundaryCrossingTs(frames: TelemetryFrame[], boundary: number): num
   return null;
 }
 
-export function sectorForPos(pos: number, layout: TrackLayout): number {
+export function sectorForPos(pos: number, layout: TrackLayout): SectorConfig {
   const sector =
     layout.sectors.find((s) => pos >= s.startPos && pos < s.endPos) ??
     layout.sectors[layout.sectors.length - 1];
-  return sector.id;
+  return sector;
 }
 
 export function framesInSector(
@@ -125,6 +125,6 @@ export function framesInSector(
   sector: SectorConfig,
   layout: TrackLayout,
 ): TelemetryFrame[] {
-  return frames.filter((f) => sectorForPos(f.pos, layout) === sector.id);
+  return frames.filter((f) => sectorForPos(f.pos, layout) === sector);
 }
 
