@@ -19,7 +19,13 @@ bun test
 
 ```bash
 curl -X POST http://localhost:3000/ingest -H "Content-Type: application/json" -d @telemetry.json
+```
+
+```bash
 curl http://localhost:3000/laps
+```
+
+```bash
 curl http://localhost:3000/analysis
 ```
 
