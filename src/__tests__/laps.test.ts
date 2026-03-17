@@ -26,7 +26,7 @@ describe("GET /laps", () => {
       expect(lap).toHaveProperty("lapTime");
       expect(lap).toHaveProperty("sectors");
       expect(lap.sectors.length).toBe(3);
-      expect(lap.sectors.map((s: any) => s.sector)).toEqual([1, 2, 3]);
+      expect(lap.sectors.map((s: any) => s.sector.id)).toEqual([1, 2, 3]);
     }
   });
 });

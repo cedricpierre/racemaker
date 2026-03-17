@@ -40,6 +40,14 @@ export const AnalysisResultSchema = z.object({
     lapTime: z.number().min(0),
     delta: z.number().min(0),
   }),
+  sectorDeltas: z.array(
+    z.object({
+      sector: SectorConfigSchema,
+      bestTime: z.number().min(0),
+      worstTime: z.number().min(0),
+      delta: z.number(),
+    }),
+  ),
   problemSector: SectorConfigSchema,
   issue: AnalysisIssueSchema,
   coachingMessage: z.string().min(1),

@@ -22,7 +22,7 @@ describe("GET /analysis", () => {
     expect(analysis.worstLap).toHaveProperty("lapNumber");
 
     expect(analysis.worstLap.lapNumber).toBe(3);
-    expect(analysis.problemSector).toBe(2);
+    expect(analysis.problemSector.id).toBe(2);
     expect(analysis.issue).toBe("tyre_overheat");
     expect(typeof analysis.coachingMessage).toBe("string");
     expect(analysis.coachingMessage.length).toBeGreaterThan(10);
