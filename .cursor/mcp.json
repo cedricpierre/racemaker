@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+        "sherlock": {
+            "type": "stdio",
+            "command": "/Users/cedricpierre/code/sherlock/dist/sherlock/sherlock",
+        }
+    }
+}

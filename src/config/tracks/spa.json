@@ -1,0 +1,10 @@
+{
+  "id": "spa",
+  "displayName": "Spa-Francorchamps",
+  "sectors": [
+    { "id": 1, "name": "Sector 1", "startPos": 0.0, "endPos": 0.333 },
+    { "id": 2, "name": "Sector 2", "startPos": 0.333, "endPos": 0.667 },
+    { "id": 3, "name": "Sector 3", "startPos": 0.667, "endPos": 1.0 }
+  ]
+}
+

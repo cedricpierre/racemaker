@@ -1,0 +1,14 @@
+{
+  "name": "racemaker-telemetry-api",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "bun run challenge-hard.ts",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "hono": "^4.9.7",
+    "zod": "^4.1.8"
+  }
+}
+
