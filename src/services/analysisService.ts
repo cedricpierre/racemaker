@@ -250,7 +250,7 @@ function buildCoachingMessage(
 
   const topEvidence = chosen.evidence
     .slice(0, 2)
-    .map((e) => `${e.label}=${e.value}`)
+    .map((e) => `${e.label} is ${e.value}`)
     .join(", ");
 
   switch (chosen.issue) {
